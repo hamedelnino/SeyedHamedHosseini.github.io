@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e1b2e">
+  <title>Seyed Hamed Hosseini | IT Infrastructure Engineer</title>
+  <meta name="description" content="Seyed Hamed Hosseini — IT Infrastructure Engineer with 9+ years of experience in Linux, networking, VMware, Veeam, Zabbix and university IT operations.">
+  <meta property="og:title" content="Seyed Hamed Hosseini | IT Infrastructure Engineer">
+  <meta property="og:description" content="Linux, networking, virtualization, backup and monitoring. 9+ years in university IT.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (_) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="ubuntu-mark" href="#home" aria-label="Back to top">
+      <span class="ubuntu-symbol">●</span><span>Activities</span>
+    </a>
+    <div class="topbar-center"><span class="topbar-dot"></span> hamed@portfolio: ~</div>
+    <div class="topbar-right">
+      <span class="system-label">IT INFRASTRUCTURE</span>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">☼</button>
+      <a class="topbar-power" href="#contact" aria-label="Contact">⏻</a>
+    </div>
+  </header>
+
+  <div class="desktop-shell">
+    <aside class="dock" aria-label="Quick navigation">
+      <a class="dock-item active" href="#home" title="Home"><span>⌂</span><small>Home</small></a>
+      <a class="dock-item" href="#skills" title="Skills"><span>▦</span><small>Skills</small></a>
+      <a class="dock-item" href="#platforms" title="Platforms"><span>▣</span><small>Platforms</small></a>
+      <a class="dock-item" href="#experience" title="Experience"><span>◷</span><small>Work</small></a>
+      <a class="dock-item" href="#lab" title="Home lab"><span>⌘</span><small>Lab</small></a>
+      <a class="dock-item" href="#contact" title="Contact"><span>✉</span><small>Contact</small></a>
+      <span class="dock-divider"></span>
+      <a class="dock-item external" href="https://github.com/hamedelnino" target="_blank" rel="noopener" title="GitHub"><span>⌁</span><small>GitHub</small></a>
+    </aside>
+
+    <main id="main" class="main-content">
+      <section class="hero window" id="home">
+        <div class="window-titlebar">
+          <div class="window-controls"><i></i><i></i><i></i></div>
+          <span>Welcome — hamed@portfolio</span>
+          <span class="window-menu">⋮</span>
+        </div>
+        <div class="hero-content">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse"></span> OPEN TO RELOCATION & INTERNATIONAL OPPORTUNITIES</div>
+            <p class="terminal-line"><span class="prompt">hamed@portfolio:~$</span> whoami</p>
+            <h1>Seyed Hamed<br><span>Hosseini</span></h1>
+            <p class="role">IT Infrastructure Engineer <span class="role-separator">|</span> Network & Systems Administration</p>
+            <p class="intro">I run the servers, network, backups and monitoring behind a university’s IT services. I enjoy troubleshooting from the root cause, improving reliability and building infrastructure that people can depend on.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Get in touch <span>↗</span></a>
+              <a class="button button-secondary" href="https://github.com/hamedelnino" target="_blank" rel="noopener">GitHub</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/hamed-hosseini-b5079362/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+          <div class="hero-terminal" aria-label="Terminal introduction">
+            <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>bash — 90×24</span><span>⌕</span></div>
+            <div class="terminal-body">
+              <div class="terminal-muted">Ubuntu 24.04 LTS · x86_64</div>
+              <div class="terminal-ascii">  _   _                          _<br> | | | | __ _ _ __ ___   ___  __| |<br> | |_| |/ _` | '_ ` _ \ / _ \/ _` |<br> |  _  | (_| | | | | | |  __/ (_| |<br> |_| |_|\__,_|_| |_| |_|\___|\__,_|</div>
+              <div class="terminal-info"><b>hamed</b>@portfolio</div>
+              <div class="terminal-rule"></div>
+              <div><span class="t-key">Role</span> IT Infrastructure Engineer</div>
+              <div><span class="t-key">Experience</span> 9+ years</div>
+              <div><span class="t-key">Focus</span> Linux · Network · Virtualization</div>
+              <div><span class="t-key">Location</span> Open to relocation</div>
+              <div class="terminal-rule"></div>
+              <div><span class="prompt">hamed@portfolio:~$</span> <span class="cursor"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Infrastructure at a glance">
+        <article class="stat-card"><span class="stat-icon">▤</span><strong>9+</strong><span>Years in IT</span></article>
+        <article class="stat-card"><span class="stat-icon">◉</span><strong>100+</strong><span>Monitored hosts</span></article>
+        <article class="stat-card"><span class="stat-icon">▣</span><strong>8 / ~60</strong><span>ESXi hosts / VMs</span></article>
+        <article class="stat-card"><span class="stat-icon">↻</span><strong>~10 TB</strong><span>Protected data</span></article>
+      </section>
+
+      <section class="section-block" id="skills">
+        <div class="section-heading"><div><span class="section-kicker">01 / CAPABILITIES</span><h2>Technical skills</h2></div><span class="section-command">$ ls ~/skills</span></div>
+        <div class="cards-grid">
+          <article class="app-card"><div class="app-card-top"><span class="app-icon orange">⌘</span><span class="level">CORE</span></div><h3>Networking</h3><p>Cisco Catalyst 2960/3750X/3850, MikroTik CCR, VLANs, trunking, RSTP, routing, VPN, firewall rules, SNMP and fiber links.</p><div class="chips"><span>Cisco</span><span>MikroTik</span><span>TCP/IP</span></div></article>
+          <article class="app-card"><div class="app-card-top"><span class="app-icon purple">$_</span><span class="level">CORE</span></div><h3>Linux & Windows</h3><p>Debian, Ubuntu 20.04–24.04, Nginx, PHP-FPM, MariaDB, Docker, systemd and Windows Server administration.</p><div class="chips"><span>Ubuntu</span><span>Debian</span><span>Windows Server</span></div></article>
+          <article class="app-card"><div class="app-card-top"><span class="app-icon blue">▣</span><span class="level">CORE</span></div><h3>Virtualization</h3><p>VMware ESXi 8 and vCenter operations: virtual machine lifecycle, datastores, resource monitoring and host administration.</p><div class="chips"><span>VMware</span><span>ESXi</span><span>vCenter</span></div></article>
+          <article class="app-card"><div class="app-card-top"><span class="app-icon green">↻</span><span class="level">CORE</span></div><h3>Backup & Recovery</h3><p>Veeam Backup & Replication v12 across two servers, 20+ jobs, daily incrementals, weekly fulls, retention and restore operations.</p><div class="chips"><span>Veeam</span><span>Recovery</span><span>Veeam Agent</span></div></article>
+          <article class="app-card"><div class="app-card-top"><span class="app-icon cyan">◉</span><span class="level">CORE</span></div><h3>Monitoring</h3><p>Zabbix 7 and PRTG, SNMP discovery for Cisco and MikroTik, custom UserParameters, Agent2 plugins, triggers and dashboards.</p><div class="chips"><span>Zabbix</span><span>PRTG</span><span>SNMP</span></div></article>
+          <article class="app-card"><div class="app-card-top"><span class="app-icon red">⛨</span><span class="level">PRACTICAL</span></div><h3>Security</h3><p>Linux hardening, SSH security, Fail2Ban, iptables, UFW and hands-on experiments with Suricata-based network monitoring.</p><div class="chips"><span>Hardening</span><span>Fail2Ban</span><span>Suricata</span></div></article>
+        </div>
+      </section>
+
+      <section class="section-block" id="platforms">
+        <div class="section-heading"><div><span class="section-kicker">02 / PRODUCTION</span><h2>Platforms I operate</h2></div><span class="section-command">$ systemctl --type=service</span></div>
+        <div class="platform-list">
+          <article class="platform-row"><div class="platform-logo moodle">M</div><div class="platform-info"><h3>Moodle 5 & BigBlueButton</h3><p>Nginx and PHP-FPM 8.4 for Moodle, with BBB and Greenlight v3 in Docker. Scalelite load balancing and cluster sizing explored for large online classes.</p><div class="chips"><span>Moodle</span><span>BBB</span><span>Scalelite</span><span>Docker</span></div></div><span class="service-status"><i></i> Production</span></article>
+          <article class="platform-row"><div class="platform-logo nextcloud">☁</div><div class="platform-info"><h3>Nextcloud 33</h3><p>University file-sharing platform: data directory management, maintenance mode, cron, database tuning and security configuration.</p><div class="chips"><span>Nextcloud</span><span>Apache</span><span>MariaDB</span></div></div><span class="service-status"><i></i> Production</span></article>
+          <article class="platform-row"><div class="platform-logo network">⌘</div><div class="platform-info"><h3>Campus network</h3><p>Cisco switching and MikroTik routing across university sites, including VLAN design, inter-site connectivity and network troubleshooting.</p><div class="chips"><span>Cisco</span><span>MikroTik</span><span>VLAN</span></div></div><span class="service-status"><i></i> Production</span></article>
+          <article class="platform-row"><div class="platform-logo monitor">◉</div><div class="platform-info"><h3>Monitoring & backup infrastructure</h3><p>Zabbix dashboards for network, servers and service health; Veeam backup jobs, retention policies and restore operations.</p><div class="chips"><span>Zabbix</span><span>PRTG</span><span>Veeam</span></div></div><span class="service-status"><i></i> Production</span></article>
+        </div>
+      </section>
+
+      <section class="section-block" id="experience">
+        <div class="section-heading"><div><span class="section-kicker">03 / CAREER</span><h2>Experience & education</h2></div><span class="section-command">$ cat experience.log</span></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">SEP 2016 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-type">PROFESSIONAL EXPERIENCE</span><h3>IT Infrastructure & Network Administration</h3><h4>Golestan University</h4><p>Responsible for university servers, virtualization, networking, monitoring, backup and core IT services. Since 2020, also involved in the infrastructure behind virtual learning and online classes.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2013</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-type">EDUCATION</span><h3>BSc in Computer Science</h3><h4>Golestan University</h4><p>Final project focused on university network simulation, identifying network problems and exploring practical solutions.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section-block" id="lab">
+        <div class="section-heading"><div><span class="section-kicker">04 / EXPERIMENTS</span><h2>Home lab</h2></div><span class="section-command">$ ls ~/lab</span></div>
+        <div class="lab-panel">
+          <div class="lab-copy"><div class="lab-terminal-icon">$_</div><div><h3>Learning by building</h3><p>A personal environment for testing ideas before they reach production, with a focus on open-source AI tooling, automation and infrastructure services.</p></div></div>
+          <div class="lab-specs"><div><span>GPU</span><b>RTX 3070 · 3090 · 3060</b></div><div><span>AI runtime</span><b>Ollama</b></div><div><span>Interface</span><b>Open WebUI</b></div></div>
+          <div class="chips lab-chips"><span>Ollama</span><span>Open WebUI</span><span>Local LLMs</span><span>n8n automation</span><span>Supabase Vector DB</span><span>Embeddings</span><span>RAG</span></div>
+        </div>
+      </section>
+
+      <section class="section-block contact-section" id="contact">
+        <div class="section-heading"><div><span class="section-kicker">05 / CONNECT</span><h2>Let’s work together</h2></div><span class="section-command">$ ./contact.sh</span></div>
+        <div class="contact-panel">
+          <div><p class="contact-lead">I’m interested in System Administrator, Infrastructure Engineer and Network Administrator opportunities, particularly in Europe. Relocation opportunities are welcome.</p><a class="email-link" href="mailto:hamedhosseini7052@yahoo.com">hamedhosseini7052@yahoo.com <span>↗</span></a></div>
+          <div class="contact-links"><a href="https://github.com/hamedelnino" target="_blank" rel="noopener"><span>⌁</span> GitHub <b>↗</b></a><a href="https://www.linkedin.com/in/hamed-hosseini-b5079362/" target="_blank" rel="noopener"><span>in</span> LinkedIn <b>↗</b></a></div>
+        </div>
+      </section>
+
+      <footer class="footer"><span>© 2026 Seyed Hamed Hosseini</span><span>Built with <b>♥</b> and Linux spirit</span><a href="#home">Back to top ↑</a></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
