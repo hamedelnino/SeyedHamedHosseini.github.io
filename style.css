@@ -237,3 +237,27 @@ button { font: inherit; }
 .case p+p{margin-top:10px}
 .case b{color:var(--ink)}
 @media (max-width:720px){.cases{grid-template-columns:1fr}}
+
+.stack{position:relative;padding:28px 28px 0 0;min-width:0}
+.stack-frame{display:grid}
+.slide{grid-area:1/1;margin:0;transform-origin:left bottom;transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .45s}
+.slide img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;background:#17141f;cursor:zoom-in}
+.slide[data-pos="0"]{z-index:5}
+.slide[data-pos="1"]{z-index:4;transform:translate(14px,-14px) scale(.97);opacity:.8}
+.slide[data-pos="2"]{z-index:3;transform:translate(28px,-28px) scale(.94);opacity:.5}
+.slide[data-pos="x"]{z-index:1;opacity:0;transform:translate(34px,-34px) scale(.92)}
+.slide[data-pos="out"]{z-index:6;opacity:0;transform:translate(-40%,6%) rotate(-6deg)}
+.slide:not([data-pos="0"]){pointer-events:none}
+.slide:not([data-pos="0"]) figcaption{visibility:hidden}
+.stack-ctrl{display:flex;align-items:center;gap:10px;margin-top:12px}
+.stack-btn{border:1px solid #51465d;background:transparent;color:inherit;border-radius:8px;width:32px;height:32px;font-size:16px;cursor:pointer}
+.stack-btn:hover{border-color:#e95420}
+.stack-dots{display:flex;gap:6px;margin:0 auto}
+.stack-dots button{width:8px;height:8px;padding:0;border:0;border-radius:99px;background:#6b6178;cursor:pointer;transition:width .3s,background .3s}
+.stack-dots button[aria-current="true"]{width:22px;background:#e95420}
+.lightbox{border:1px solid #51465d;background:#17141f;color:#d8d1df;padding:10px;border-radius:12px;max-width:96vw}
+.lightbox::backdrop{background:rgba(10,8,16,.85)}
+.lightbox img{display:block;margin:0 auto;max-width:100%;max-height:80vh;width:auto;height:auto}
+.lightbox-cap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;font-size:13px}
+@media (prefers-reduced-motion:reduce){.slide{transition:opacity .2s}.slide[data-pos="out"],.slide[data-pos="1"],.slide[data-pos="2"],.slide[data-pos="x"]{transform:none}}
+@media (max-width:720px){.stack{padding-right:20px}}
