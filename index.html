@@ -63,11 +63,36 @@
               <a class="button button-secondary" href="https://www.linkedin.com/in/hamed-hosseini-b5079362/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
-          <figure class="hero-terminal" style="margin:0;min-width:0">
-            <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>campus-network — PRTG map</span><span></span></div>
-            <img src="images/network-map.webp" width="1100" height="618" style="display:block;width:100%;height:auto" alt="PRTG network map of the university campus with alarm state shown on each device">
-            <figcaption class="map-foot"><span class="pulse"></span> Alarm state shown directly on every device</figcaption>
-          </figure>
+          <div class="stack" role="group" aria-roledescription="carousel" aria-label="Infrastructure screenshots">
+            <div class="stack-frame">
+            <figure class="hero-terminal slide" data-pos="0">
+              <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>campus-network — PRTG map</span><span></span></div>
+              <img src="images/network-map.webp" width="1100" height="618" alt="PRTG network map with alarm state shown on each device">
+              <figcaption class="map-foot">PRTG network map with alarm state shown on each device</figcaption>
+            </figure>
+            <figure class="hero-terminal slide" data-pos="x">
+              <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>campus-network — Zabbix map</span><span></span></div>
+              <img src="images/zabbix-map.webp" width="1155" height="649" alt="Zabbix network map with hosts grouped by role" loading="lazy" decoding="async">
+              <figcaption class="map-foot">Zabbix network map with hosts grouped by role</figcaption>
+            </figure>
+            <figure class="hero-terminal slide" data-pos="x">
+              <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>zabbix — dashboard</span><span></span></div>
+              <img src="images/zabbix-dashboard.webp" width="1100" height="715" alt="Zabbix dashboard: TLS certificate expiry dates and switch and router status" loading="lazy" decoding="async">
+              <figcaption class="map-foot">Zabbix dashboard: TLS certificate expiry dates and switch and router status</figcaption>
+            </figure>
+            <figure class="hero-terminal slide" data-pos="x">
+              <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>zabbix — bandwidth</span><span></span></div>
+              <img src="images/zabbix-bandwidth.webp" width="678" height="341" alt="Zabbix dashboard: bandwidth graphs for core interfaces" loading="lazy" decoding="async">
+              <figcaption class="map-foot">Zabbix dashboard: bandwidth graphs for core interfaces</figcaption>
+            </figure>
+            <figure class="hero-terminal slide" data-pos="x">
+              <div class="terminal-head"><span class="terminal-lights"><i></i><i></i><i></i></span><span>veeam — backup jobs</span><span></span></div>
+              <img src="images/veeam-jobs.webp" width="1012" height="629" alt="Veeam console: recent backup and backup copy jobs, all successful" loading="lazy" decoding="async">
+              <figcaption class="map-foot">Veeam console: recent backup and backup copy jobs, all successful</figcaption>
+            </figure>
+            </div>
+            <div class="stack-ctrl"><button class="stack-btn stack-prev" type="button" aria-label="Previous screenshot">‹</button><div class="stack-dots"></div><button class="stack-btn stack-next" type="button" aria-label="Next screenshot">›</button></div>
+          </div>
         </div>
       </section>
 
@@ -142,6 +167,7 @@
       <footer class="footer"><span>© 2026 Seyed Hamed Hosseini</span><span>Built with <b>♥</b> and Linux spirit</span><a href="#home">Back to top ↑</a></footer>
     </main>
   </div>
+  <dialog id="lightbox" class="lightbox" aria-label="Screenshot preview"><img alt=""><div class="lightbox-cap"><span></span><button class="stack-btn" type="button" aria-label="Close">✕</button></div></dialog>
   <script src="script.js"></script>
 </body>
 </html>
