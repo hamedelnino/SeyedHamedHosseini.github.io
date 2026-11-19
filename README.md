@@ -2,7 +2,7 @@
 
 Personal portfolio of a Network & Systems Administrator. A static site in plain HTML, CSS and JavaScript, hosted on GitHub Pages.
 
-**Live site:** (https://hamedelnino.github.io/SeyedHamedHosseini.github.io/)
+**Live site:** (https://hamedelnino.github.io)
 
 ## Features
 
