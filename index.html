@@ -16,10 +16,13 @@
       if (savedTheme) document.documentElement.dataset.theme = savedTheme;
     } catch (_) {}
   </script>
+  <script>
+try{if(!sessionStorage.getItem("booted")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("boot-pending");setTimeout(function(){document.documentElement.classList.remove("boot-pending")},6000)}}catch(_){}
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
+<div class="boot" id="boot" role="status" aria-label="Loading portfolio"><div class="boot-log" id="boot-log"></div><button class="boot-skip" id="boot-skip" type="button">Skip ↵</button></div>
   <header class="topbar">
     <a class="ubuntu-mark" href="#home" aria-label="Back to top">
       <span class="ubuntu-symbol">●</span><span>Activities</span>
@@ -170,5 +173,6 @@
   </div>
   <dialog id="lightbox" class="lightbox" aria-label="Screenshot preview"><img alt=""><div class="lightbox-cap"><span></span><button class="stack-btn" type="button" aria-label="Close">✕</button></div></dialog>
   <script src="script.js"></script>
+  <script src="boot.js"></script>
 </body>
 </html>
