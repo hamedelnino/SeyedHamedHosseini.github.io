@@ -1,18 +1,35 @@
-# Hamed Hosseini — Linux-inspired Portfolio
+# Seyed Hamed Hosseini | Portfolio
 
-A responsive, single-page portfolio with an Ubuntu GNOME-inspired visual style.
+Personal portfolio of a Network & Systems Administrator. A static site in plain HTML, CSS and JavaScript, hosted on GitHub Pages.
 
-## Files
-- `index.html` — page structure and resume content
-- `style.css` — Ubuntu-inspired theme, responsive layout, and print styles
-- `script.js` — theme toggle and active section navigation
+**Live site:** (https://hamedelnino.github.io/SeyedHamedHosseini.github.io/)
 
-## Publish with GitHub Pages
-1. Create or open your GitHub repository.
-2. Upload these three files to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then save.
-6. Wait for GitHub Pages to publish the site.
+## Features
 
-The page is static and does not require a backend or build process.
+- Linux-desktop look (top bar, dock, windows) with light and dark themes
+- Screenshot carousel with a lightbox
+- Command palette (`Ctrl+K` or `/`)
+- Boot screen and a live uptime line
+- No trackers, no cookies, no external fonts or scripts
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | The page |
+| `style.css` | Styles |
+| `script.js` | Theme toggle, dock highlight, screenshot carousel and lightbox |
+| `boot.js` | Boot screen |
+| `palette.js` | Command palette |
+| `uptime.js` | Uptime line |
+| `images/` | Redacted screenshots (no hostnames, IPs or credentials) |
+
+
+## License
+
+- **Code** (HTML structure, CSS, JavaScript) is under the [MIT License](LICENSE).
+- **Content** (text, case studies, screenshots, images and my name) is © 2026 Seyed Hamed Hosseini, all rights reserved. Please don't reuse it as your own. If you want to use the design as a template, replace all personal content with yours.
+
+## Contact
+
+hamedhosseini7052@yahoo.com · [LinkedIn](https://www.linkedin.com/in/hamed-hosseini-b5079362/)
