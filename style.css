@@ -276,3 +276,13 @@ button { font: inherit; }
 .lightbox-cap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;font-size:13px}
 @media (prefers-reduced-motion:reduce){.slide{transition:opacity .2s}.slide[data-pos="out"],.slide[data-pos="1"],.slide[data-pos="2"],.slide[data-pos="x"]{transform:none}}
 @media (max-width:720px){.stack{padding-right:20px}}
+/* Boot sequence */
+.boot { display: none; position: fixed; inset: 0; z-index: 1000; align-items: center; justify-content: center; padding: 24px; background: #171421; transition: opacity .45s; }
+.boot-pending .boot { display: flex; }
+.boot-pending { overflow: hidden; }
+.boot.hide { opacity: 0; pointer-events: none; }
+.boot-log { width: min(560px, 100%); font: 13px/1.8 ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace; color: #d8d1df; white-space: pre-wrap; }
+.boot-log .ok { color: #8bd49c; }
+.boot-log .hi { display: inline-block; margin-top: 10px; color: #ff875d; }
+.boot-skip { position: absolute; right: 20px; bottom: 20px; padding: 4px 12px; border: 1px solid #51465d; border-radius: 6px; background: none; color: #8f849b; font: 12px ui-monospace,monospace; cursor: pointer; }
+.boot-skip:hover { border-color: #e95420; color: #f4f0f8; }
