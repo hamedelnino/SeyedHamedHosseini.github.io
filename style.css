@@ -309,3 +309,7 @@ button { font: inherit; }
 .hex span { color: rgba(255,255,255,.92); font-size: 12px; }
 @media (max-width: 520px) { .hex { width: 132px; height: 152px; } .hex strong { font-size: 21px; } }
 @media (prefers-reduced-motion: reduce) { .hex { transition: none; } .hex:hover { transform: none; } }
+/* Uptime line */
+.uptime-cmd { margin: 6px 0 2px; }
+.uptime-out { margin: 0 0 10px; color: var(--ink); }
+.uptime-out b { color: var(--orange-light); font-weight: 500; }
