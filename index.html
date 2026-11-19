@@ -29,6 +29,7 @@ try{if(!sessionStorage.getItem("booted")&&!matchMedia("(prefers-reduced-motion: 
     </a>
     <div class="topbar-center"><span class="topbar-dot"></span> Hamed@portfolio: ~</div>
     <div class="topbar-right">
+      <button class="icon-button" id="palette-open" type="button" aria-label="Search (Ctrl+K)" title="Search (Ctrl+K)">⌕</button>
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">☼</button>
     </div>
   </header>
@@ -172,7 +173,9 @@ try{if(!sessionStorage.getItem("booted")&&!matchMedia("(prefers-reduced-motion: 
     </main>
   </div>
   <dialog id="lightbox" class="lightbox" aria-label="Screenshot preview"><img alt=""><div class="lightbox-cap"><span></span><button class="stack-btn" type="button" aria-label="Close">✕</button></div></dialog>
+  <dialog id="palette" class="palette" aria-label="Command palette"><div class="pal-input"><b>&gt;</b><input id="pal-q" type="text" placeholder="Search skills, work, links…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="pal-list"></div><ul class="pal-list" id="pal-list" role="listbox"></ul><div class="pal-hint"><span>↑↓ navigate</span><span>↵ open</span><span>esc close</span></div></dialog>
   <script src="script.js"></script>
   <script src="boot.js"></script>
+  <script src="palette.js"></script>
 </body>
 </html>
