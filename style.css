@@ -258,6 +258,21 @@ button { font: inherit; }
 .lightbox{border:1px solid #51465d;background:#17141f;color:#d8d1df;padding:10px;border-radius:12px;max-width:96vw}
 .lightbox::backdrop{background:rgba(10,8,16,.85)}
 .lightbox img{display:block;margin:0 auto;max-width:100%;max-height:80vh;width:auto;height:auto}
+/* Hero name: Linux cursor + network link */
+.hero h1.name { margin: 13px 0 0; text-shadow: 0 0 28px rgba(233,84,32,.18); }
+.hero h1 .name-main { color: var(--ink); }
+.hero h1 .name-accent { color: var(--orange-light); }
+.name-cursor { display: inline-block; width: .42em; height: .8em; margin-left: .12em; background: var(--green); vertical-align: -.05em; animation: blink 1s steps(2,start) infinite; }
+.cable { position: relative; display: block; height: 2px; width: min(100%, 360px); margin: 16px 0 12px; border-radius: 2px; background: linear-gradient(90deg, var(--orange), var(--purple-light) 65%, transparent); }
+.cable::after { content: ""; position: absolute; top: -2px; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); animation: packet 3.2s linear infinite; }
+.link-status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 8px; font: 12px ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace; color: var(--subtle); }
+.link-status b { color: var(--green); font-weight: 500; }
+.ls-led { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(139,212,156,.15), 0 0 8px var(--green); animation: led 1.6s ease-in-out infinite; }
+@keyframes packet { from { left: 0; opacity: 0; } 10%, 90% { opacity: 1; } to { left: calc(100% - 6px); opacity: 0; } }
+@keyframes led { 50% { opacity: .35; } }
+:root[data-theme="light"] .link-status b, :root[data-theme="light"] .name-cursor { color: #2c7a43; }
+:root[data-theme="light"] .name-cursor, :root[data-theme="light"] .cable::after { background: #2c7a43; box-shadow: none; }
+@media (prefers-reduced-motion: reduce) { .cable::after { display: none; } .ls-led, .name-cursor { animation: none; } }
 .lightbox-cap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;font-size:13px}
 @media (prefers-reduced-motion:reduce){.slide{transition:opacity .2s}.slide[data-pos="out"],.slide[data-pos="1"],.slide[data-pos="2"],.slide[data-pos="x"]{transform:none}}
 @media (max-width:720px){.stack{padding-right:20px}}
