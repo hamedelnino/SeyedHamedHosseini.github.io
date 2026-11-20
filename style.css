@@ -313,3 +313,16 @@ button { font: inherit; }
 .uptime-cmd { margin: 6px 0 2px; }
 .uptime-out { margin: 0 0 10px; color: var(--ink); }
 .uptime-out b { color: var(--orange-light); font-weight: 500; }
+/* Experience bullet lists */
+.tl-list { margin: 12px 0 0; padding-left: 18px; }
+.tl-list li { margin: 7px 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.tl-list li b { color: var(--ink); font-weight: 600; }
+/* AI flow */
+.ai-flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; margin-bottom: 22px; }
+.ai-node { flex: 1 1 150px; display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.ai-node b { font-size: 14px; }
+.ai-node span { color: var(--muted); font-size: 12px; }
+.ai-gpu { border-color: var(--orange); }
+.ai-arrow { align-self: center; color: var(--orange-light); font-style: normal; }
+.ai-cards { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 720px) { .ai-cards { grid-template-columns: 1fr; } .ai-arrow { display: none; } }
